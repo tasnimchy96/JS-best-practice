@@ -1,0 +1,107 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+#todo-list {
+  width: 40%;
+  box-shadow: 1px 2px 8px rgb(152, 150, 150);
+  border-radius: 4px;
+  margin: 50px auto;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+  padding-left: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+  margin-top: -14px;
+  padding-top: 12px;
+}
+
+h3 {
+  padding: 15px 10px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+h3::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 4%;
+  width: 20px;
+  height: 20px;
+  background-image: url("../src/assets/refresh_reload_icon.png");
+  background-size: cover;
+  cursor: pointer;
+}
+
+input[type="checkbox"] {
+  margin-right: 15px;
+}
+
+#task-input {
+  width: 95%;
+  padding-left: 12px;
+  padding-bottom: 12px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 1px solid #ccc;
+  outline: none;
+}
+
+#clear-button {
+  border: none;
+  background-color: rgb(235, 235, 235);
+  width: 100%;
+  padding: 15px;
+  margin-top: -14px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+#clear-button:hover {
+  background-color: rgb(210, 208, 208);
+}
+
+.completed {
+  text-decoration: line-through;
+  color: rgb(127, 122, 122);
+}
+
+.kebab-menu {
+  width: 25px;
+  cursor: move;
+  background-size: cover;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+.trash-can-icon {
+  width: 25px;
+  cursor: pointer;
+  background-size: cover;
+  height: 24px;
+  position: absolute;
+  top: 12px;
+  right: 20px;
+}
+
+span.editable {
+  border: none;
+  outline: none;
+}
